@@ -3,7 +3,7 @@
 
 \subsection{Measurement methods}
 
-First, we explored different ways of obtaining the parameters' values. We set the signal generator to $f = \SI{864}{\hertz}$, $U_{pp} = \SI{2.6}{\volt}$ and connected it to the oscilloscope.
+First, we explored different ways of obtaining the parameters' values. We set the signal generator to $f = \SI{864}{\hertz}$, $U_{pp} = \SI{2.6}{\volt}$ and connected it to the oscilloscope using Channel 1.
 
 \subsubsection*{Direct}
 
@@ -99,10 +99,43 @@ $U_{m}$ and $T$ calculations are shown in Equations~\ref{eq:magnitude2},~\ref{eq
 	\label{eq:frequency2}
 \end{equation}
 
-\subsection{}
+\subsection{Triggering}
 
+In this part of the experiment we observed what happens to signals when different trigger sources are used. We generated two signals and connected them to Channels 1 and 2.
 
+\begin{itemize}
+	\item CH1
+	\begin{itemize}
+		\item $V_{0} = \SI{0}{\volt}$
+		\item $V_{pp} = \SI{2.3}{\volt}$
+		\item $f = \SI{864}{\hert}$ or $f = \SI{1}{\kilo\hert}$
+	\end{itemize}
+	\item CH2
+	\begin{itemize}
+		\item $V_{0} = \SI{0}{\volt}$
+		\item $V_{pp} = \SI{2}{\volt}$
+		\item $f = \SI{4}{\kilo\hert}$
+	\end{itemize}
+\end{itemize}
 
+Next, different frequency and trigger combinations were tried. Table~\ref{tab:triggering} shows all collected data.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c|c|c|c}
+		$f_{1} [\unit{\kilo\hertz}]$ & $f_{2} [\unit{\kilo\hertz}]$ & Trigger source & Signal\\
+		\hline
+		0.864 & 4 & CH1 & Unstable\\
+		\hline
+		1 & 4 & CH1 & Stable\\
+		\hline
+		1 & 4 & CH2 & Unstable\\
+		\hline
+		0.864 & 4 & CH2 & Unstable\\
+	\end{tabular}
+	\caption{Frequency and trigger combinations}
+	\label{tab:triggering}
+\end{table}
 
 
 

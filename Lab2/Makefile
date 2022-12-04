@@ -10,6 +10,7 @@ SOURCES=\
 report.pdf: $(SOURCES)
 	mkdir -p build
 	latexmk\
+		-interaction=nonstopmode\
 		-emulate-aux-dir\
 		-aux-directory=build\
 		-pdf main.tex
