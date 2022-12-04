@@ -1,6 +1,7 @@
 SOURCES=\
 	main.tex\
 	theory.tex\
+	experiment.tex\
 	WUST-ECE-Metrology-Report.sty\
 	images
 
