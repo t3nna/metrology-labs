@@ -7,14 +7,12 @@ SOURCES=\
 	images
 
 
+.ONESHELL:
 report.pdf: $(SOURCES)
-	mkdir -p build
 	latexmk\
 		-interaction=nonstopmode\
-		-emulate-aux-dir\
-		-aux-directory=build\
-		-pdf main.tex
-
+		-xelatex\
+		main.tex
 
 .PHONY: clean
 clean:
