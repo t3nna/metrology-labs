@@ -1,6 +1,151 @@
 \section{Experiment}
 \subsection{Setup}
 
+In the last lab we used the SDG1025 Generator and "SDS1052DL+" oscilloscope
+\subsubsection*{Detailed explanation of how we used it}
+SDG1025 Generator
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{images/11.png}
+	\caption{Schematic example}
+	\label{fig:wow1}
+\end{figure}
+
+User manual:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{images/12.png}
+	\caption{Schematic example}
+	\label{fig:wow2}
+\end{figure}
+
+- To Set a Waveform we used buttons with waveform icon that which are on \textbf{"waveform keys"} panel.
+- With "Sine" button waveform window will display sine waveform.
+- By setting frequency/period, amplitude/high level,
+offset/low level, sine signal with different parameters can be generated.
+- To set freq and another parameters we used \textbf{Number keys}, all parameters displayed in "\textbf{Parameter Area}"
+- We used two buttons on the right side of the
+   operation panel, which are used to activate or deactivate the output signal.
+- There are three sets of buttons on the operation
+  panel, which are direction button, the knob and the keypad.
+  All of them we used for:
+1. The up and down keys were used to shift parameters and the left and right
+     keys were used to shift digits.
+2. Keypad was used to directly set the parameters value.
+3. Knob was used to change a signal digit value whose range is 0~9
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{images/13.png}
+	\caption{Schematic example}
+	\label{fig:wow3}
+\end{figure}
+
+Set Sine Signals
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{images/14.png}
+	\caption{Schematic example}
+	\label{fig:wow4}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{images/15.png}
+	\caption{Schematic example}
+	\label{fig:wow5}
+\end{figure}
+
+ - To Set the Output Frequency/Period we used "\textbf{Sine}" and "\textbf{Freq}" buttons.
+   The frequency shown on the screen when the instrument is powered is
+   the default value or the set value beforehand. When setting the function,
+   if the current value is valid for the new waveform, it will be used
+   sequentially. Also we used direction button to select the digit you want to edit and direction button to select the digit you want to edit.
+ - We applied the same for the rest of the parameters using "\textbf{Ampl}", "\textbf{Offset}" and "\textbf{Phase}" buttons.
+
+\subsubsection*{"SDS1052DL+" oscilloscope}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{images/16.png}
+	\caption{Schematic example}
+	\label{fig:wow6}
+\end{figure}
+
+\subsubsection*{Menu and Control Button}
+- It would be better to start from channel buttons. We used them to turn that channel ON or OFF
+  and open the channel menu for that channel. Also we can use the channel menu to
+  set up a channel. When the channel is on, the channel button is lit.
+- RUN/STOP: Continuously acquires waveforms or stops the acquisition.
+- SET TO 50%: We used it to stabilize a waveform quickly. The oscilloscope can
+  set the trigger level to be halfway between the minimum and maximum
+  voltage level automatically.
+- MATH: It used to display the Math menu. We can use the "\textbf{MATH}" menu to use the
+  oscilloscopes Math functions.
+- "HORI MENU": We used it to display the Horizontal menu. We can use the Horizontal
+  menu to display the waveform and zoom in a segment of a waveform.
+- MEASURE: Used to display a menu of measurement parameters.
+- AUTO: Very useful button. Automatically sets the oscilloscope controls to produce a usable display
+  of the input signals.
+- SINGLE: Acquire a single waveform and then stops.
+- Channel Connector (CH1, CH2): Input connectors for waveforms display.
+- The horizontal position control establishes the time between the trigger position
+  and the screen center. We can adjust the horizontal “POSITION” knob control to
+  view waveform data before the trigger, after the trigger, or some of each. When
+  we change the horizontal position of a waveform, we are changing the time
+  between the trigger and the center of the display actually
+\subsubsection*{Universal Knob}
+Deserves a separate group
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{images/17.png}
+	\caption{Schematic example}
+	\label{fig:wow7}
+\end{figure}
+
+- Very useful knob. We used the Universal knob with many functions, such as adjusting the
+  holdoff time, moving cursors, setting the pulse width, adjusting the upper and lower frequency limit, adjust X and Y masks when
+  using the pass/fail function etc. We can also turn the “Universal” knob to
+  adjust the storage position of setups, waveforms, pictures when
+  saving/recalling and to select menu options.
+\subsubsection*{Vertical System}
+We used vertical control for displaying waveform, rectify scale and
+position.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{images/18.png}
+	\caption{Schematic example}
+	\label{fig:wow8}
+\end{figure}
+
+
+\subsubsection*{Horizontal System}
+As follow Picture, there are one button and two knobs in the HORIZONTAL area.
+We used the horizontal controls to change the horizontal scale and position of
+waveforms. The horizontal position readout shows the time represented by the
+center of the screen, using the time of the trigger as zero. Changing the horizontal
+scale causes the waveform to expand or contract around the screen center.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=12cm]{images/18.png}
+	\caption{Schematic example}
+	\label{fig:wow9}
+\end{figure}
+
+
+\subsubsection*{Acquiring Signals System}
+On the lab we used it last.
+When we acquire a signal, the oscilloscope converts it into a digital form and
+displays a waveform. The acquisition mode defines how the signal is digitized and
+the time base setting affects the time span and level of detail in the acquisition.
+- Sampling: In this acquisition mode, the oscilloscope samples the signal in
+evenly spaced intervals to construct the waveform. This mode accurately
+represents signals most of the time.
+- Advantage: We can use this mode to reduce random noise.
+  Disadvantage: This mode does not acquire rapid variations in the signal that may occur between samples. This can result in aliasing may cause narrow pulses to be
+  missed.
+
 \subsection{Measurement methods}
 
 First, we explored different ways of obtaining the parameters' values. We configured the signal generator to $f = \SI{864}{\hertz}$, $V_{pp} = \SI{2.6}{\volt}$ and connected it to the first oscilloscope channel.
