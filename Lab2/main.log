@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.12.4)  5 DEC 2022 12:37
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.12.4)  5 DEC 2022 13:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -400,7 +400,7 @@ File: images/img.png Graphic file (type bmp)
 <images/img.png>
 File: images/img_1.png Graphic file (type bmp)
 <images/img_1.png>
-)
+
 Overfull \hbox (4.44pt too wide) has occurred while \output is active
  [] 
  []
@@ -410,10 +410,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  \TU/lmr/m/n/10 3
  []
 
-[3]
-\openout2 = `experiment.aux'.
-
- (./experiment.tex
+[3])
 Overfull \hbox (4.44pt too wide) has occurred while \output is active
  [] 
  []
@@ -423,11 +420,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  \TU/lmr/m/n/10 4
  []
 
-[4
+[4]
+\openout2 = `experiment.aux'.
 
+ (./experiment.tex
+File: images/11.png Graphic file (type bmp)
+<images/11.png>
+File: images/15.png Graphic file (type bmp)
+<images/15.png>
 
-
-]
 Overfull \hbox (4.44pt too wide) has occurred while \output is active
  [] 
  []
@@ -437,7 +438,18 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  \TU/lmr/m/n/10 5
  []
 
-[5])
+[5
+
+
+
+]
+File: images/13.png Graphic file (type bmp)
+<images/13.png>
+File: images/14.png Graphic file (type bmp)
+<images/14.png>
+File: images/16.png Graphic file (type bmp)
+<images/16.png>
+
 Overfull \hbox (4.44pt too wide) has occurred while \output is active
  [] 
  []
@@ -448,9 +460,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [6]
-\openout2 = `conclusion.aux'.
+File: images/17.png Graphic file (type bmp)
+<images/17.png>
 
- (./conclusion.tex)
 Overfull \hbox (4.44pt too wide) has occurred while \output is active
  [] 
  []
@@ -460,7 +472,66 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  \TU/lmr/m/n/10 7
  []
 
-[7
+[7]
+File: images/18.png Graphic file (type bmp)
+<images/18.png>
+
+Overfull \hbox (4.44pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ \TU/lmr/m/n/10 8
+ []
+
+[8]
+File: images/18.png Graphic file (type bmp)
+<images/18.png>
+
+Overfull \hbox (4.44pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ \TU/lmr/m/n/10 9
+ []
+
+[9]
+Overfull \hbox (4.44pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ \TU/lmr/m/n/10 10
+ []
+
+[10])
+Overfull \hbox (4.44pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ \TU/lmr/m/n/10 11
+ []
+
+[11]
+\openout2 = `conclusion.aux'.
+
+ (./conclusion.tex)
+Overfull \hbox (4.44pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ \TU/lmr/m/n/10 12
+ []
+
+[12
 
 
 
@@ -469,12 +540,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E53CEDFB3308A54409DDE6F764DADF51;1241.
  ) 
 Here is how much of TeX's memory you used:
- 14655 strings out of 476179
- 305914 string characters out of 5809544
- 581278 words of memory out of 5000000
- 35242 multiletter control sequences out of 15000+600000
+ 14719 strings out of 476179
+ 306918 string characters out of 5809544
+ 582641 words of memory out of 5000000
+ 35299 multiletter control sequences out of 15000+600000
  469691 words of font info for 38 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 75i,13n,79p,535b,870s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,761b,870s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (8 pages, 100004 bytes).
+Output written on main.xdv (13 pages, 153348 bytes).
