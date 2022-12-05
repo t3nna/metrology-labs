@@ -1,3 +1,145 @@
-\section{Setup}
+\section{Experiment}
+\subsection{Setup}
 
-\section{Results}
+\subsection{Measurement methods}
+
+First, we explored different ways of obtaining the parameters' values. We set the signal generator to $f = \SI{864}{\hertz}$, $U_{pp} = \SI{2.6}{\volt}$ and connected it to the oscilloscope using Channel 1.
+
+\subsubsection*{Direct}
+
+ To obtain parameters' values using the direct method, one must read the peak-to-peak distance from the oscilloscope's display and multiply it by the setting of the vertical sensitivity knob.
+
+The vertical sensitivity knob was set to \SI{0.5}{\volt}. Table~\ref{tab:direct-method} shows the parameters' values.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c|c|c|c|c|c|c}
+		$Y$ & $C_{y} [\unit{\volt}]$ & $f [\unit{\hertz}]$ & $U_{pp} [\unit{\volt}]$ & $U_{m} [\unit{\volt}]$ & $U_{0} [\unit{\volt}]$ & $T [\unit{\micro\second}]$\\
+		\hline
+		5.1 & 0.5 & 864 & 2.55 & 1.275 & 0.3 & 1157
+	\end{tabular}
+	\caption{Direct method ($Y$ -- peak-to-peak distance, $C_{y}$ -- sensitivity, $f$ -- frequency, $U_{pp}$ -- peak-to-peak value, $U_{m}$ -- magnitude, $U_{0}$ -- average (DC) value, $T$ -- period)}
+	\label{tab:direct-method}
+\end{table}
+
+$U_{pp}$, $U_{m}$ and $T$ calculations are shown in Equations~\ref{eq:peak-to-peak},~\ref{eq:magnitude},~\ref{eq:frequency}.
+
+
+\begin{equation}
+	U_{pp} = Y\cdot C_{y} = 5.1\cdot \SI{0.5}{\volt} = \SI{2.55}{\volt}
+	\label{eq:peak-to-peak}
+\end{equation}
+
+\begin{equation}
+	U_{m} = \frac{U_{pp}}{2} = \frac{\SI{2.55}{\volt}}{2} = \SI{1.275}{\volt}
+	\label{eq:magnitude}
+\end{equation}
+
+\begin{equation}
+	T = \frac{1}{f} = \frac{1}{\SI{864}{\hertz}} = \SI{0.001157407407}{\second} = \SI{1157}{\micro\second}
+	\label{eq:frequency}
+\end{equation}
+
+\subsubsection*{Cursors}
+
+In the cursors method the picture is first shifted on the display to facilitate reading. The remaining steps are the same as in the direct method.
+
+The cursors were positioned at \SI{1.64}{\volt} and \SI{0.96}{\volt}. Table~\ref{tab:cursors-method} shows the parameters' values. The peak-to-peak value should have been calculated manually but because its value was always shown on the display, we forgot to do it and read it directly from the display.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c|c|c|c|c|c|c}
+		$A [\unit\volt]$ & $B [\unit\volt]$ & $f [\unit{\hertz}]$ & $U_{pp} [\unit{\volt}]$ & $U_{m} [\unit{\volt}]$ & $U_{0} [\unit{\volt}]$ & $T [\unit{\micro\second}]$\\
+		\hline
+		1.64 & 0.96 & 864 & 2.6 & 1.3 & 0.3 & 1157
+	\end{tabular}
+	\caption{Direct method ($A$ -- 1st cursor, $B$ -- 2nd cursor, $f$ -- frequency, $U_{pp}$ -- peak-to-peak value, $U_{m}$ -- magnitude, $U_{0}$ -- average (DC) value, $T$ -- period)}
+	\label{tab:cursors-method}
+\end{table}
+
+$U_{m}$ and $T$ calculations are shown in Equations~\ref{eq:magnitude2},~\ref{eq:frequency2}.
+
+\begin{equation}
+	U_{m} = \frac{U_{pp}}{2} = \frac{\SI{2.6}{\volt}}{2} = \SI{1.3}{\volt}
+	\label{eq:magnitude2}
+\end{equation}
+
+\begin{equation}
+	T = \frac{1}{f} = \frac{1}{\SI{864}{\hertz}} = \SI{0.001157407407}{\second} = \SI{1157}{\micro\second}
+	\label{eq:frequency2}
+\end{equation}
+
+
+\subsubsection*{Measure}
+
+In the measure method, a "measure" button is pressed on the oscilloscope to obtain the results. The peak-to-peak value is then read directly from the display.
+
+Table~\ref{tab:measure-method} shows the parameters' values.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c|c|c|c|c}
+		$f [\unit{\hertz}]$ & $U_{pp} [\unit{\volt}]$ & $U_{m} [\unit{\volt}]$ & $U_{0} [\unit{\volt}]$ & $T [\unit{\micro\second}]$\\
+		\hline
+		864 & 2.6 & 1.3 & 0.3 & 1157
+	\end{tabular}
+	\caption{Direct method ($f$ -- frequency, $U_{pp}$ -- peak-to-peak value, $U_{m}$ -- magnitude, $U_{0}$ -- average (DC) value, $T$ -- period)}
+	\label{tab:measure-method}
+\end{table}   
+
+$U_{m}$ and $T$ calculations are shown in Equations~\ref{eq:magnitude2},~\ref{eq:frequency2}.
+
+\begin{equation}
+	U_{m} = \frac{U_{pp}}{2} = \frac{\SI{2.6}{\volt}}{2} = \SI{1.3}{\volt}
+	\label{eq:magnitude2}
+\end{equation}
+
+\begin{equation}
+	T = \frac{1}{f} = \frac{1}{\SI{864}{\hertz}} = \SI{0.001157407407}{\second} = \SI{1157}{\micro\second}
+	\label{eq:frequency2}
+\end{equation}
+
+\subsection{Triggering}
+
+In this part of the experiment we observed what happens to signals when different trigger sources are used. We generated two signals and connected them to Channels 1 and 2.
+
+\begin{itemize}
+	\item CH1
+	\begin{itemize}
+		\item $V_{0} = \SI{0}{\volt}$
+		\item $V_{pp} = \SI{2.3}{\volt}$
+		\item $f = \SI{864}{\hert}$ or $f = \SI{1}{\kilo\hert}$
+	\end{itemize}
+	\item CH2
+	\begin{itemize}
+		\item $V_{0} = \SI{0}{\volt}$
+		\item $V_{pp} = \SI{2}{\volt}$
+		\item $f = \SI{4}{\kilo\hert}$
+	\end{itemize}
+\end{itemize}
+
+Next, different frequency and trigger combinations were tried. Table~\ref{tab:triggering} shows all collected data.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c|c|c|c}
+		$f_{1} [\unit{\kilo\hertz}]$ & $f_{2} [\unit{\kilo\hertz}]$ & Trigger source & Graph\\
+		\hline
+		0.864 & 4 & CH1 & Unstable\\
+		\hline
+		1 & 4 & CH1 & Stable\\
+		\hline
+		1 & 4 & CH2 & Unstable\\
+		\hline
+		0.864 & 4 & CH2 & nstable\\
+	\end{tabular}
+	\caption{Frequency and trigger combinations}
+	\label{tab:triggering}
+\end{table}
+
+\subsection{Oscilloscope functions}
+In the last part of the experiment we investigated two functions offered by the device: Math and Acquire.
+
+The Math function facilitates performing operations such as signal addition, subtraction, multiplication, etc.
+
+The Acquire function is used to control how the waveform is generated by varying the sample rate of the ADC (analog-to-digital) converter, and offers various acquisition modes. During the laboratory we used the Averaging Acquisition Mode - it averaged out the noise in the taken samples and displayed the underlying signal.
