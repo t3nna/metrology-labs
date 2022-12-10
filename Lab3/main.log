@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.12.4)  5 DEC 2022 13:09
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.12.4)  10 DEC 2022 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -383,7 +383,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [1]
 \openout2 = `theory.aux'.
 
- (./theory.tex
+ (./theory.tex)
 Overfull \hbox (4.44pt too wide) has occurred while \output is active
  [] 
  []
@@ -396,31 +396,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [2
 
 ]
-File: images/img.png Graphic file (type bmp)
-<images/img.png>
-File: images/img_1.png Graphic file (type bmp)
-<images/img_1.png>
-
-Overfull \hbox (4.44pt too wide) has occurred while \output is active
- [] 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- \TU/lmr/m/n/10 3
- []
-
-[3])
-Overfull \hbox (4.44pt too wide) has occurred while \output is active
- [] 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- \TU/lmr/m/n/10 4
- []
-
-[4]
 \openout2 = `experiment.aux'.
 
  (./experiment.tex
@@ -435,10 +410,10 @@ Overfull \hbox (4.44pt too wide) has occurred while \output is active
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
- \TU/lmr/m/n/10 5
+ \TU/lmr/m/n/10 3
  []
 
-[5
+[3
 
 
 
@@ -456,12 +431,38 @@ Overfull \hbox (4.44pt too wide) has occurred while \output is active
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
+ \TU/lmr/m/n/10 4
+ []
+
+[4]
+File: images/17.png Graphic file (type bmp)
+<images/17.png>
+
+Overfull \hbox (4.44pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+ \TU/lmr/m/n/10 5
+ []
+
+[5]
+File: images/18.png Graphic file (type bmp)
+<images/18.png>
+
+Overfull \hbox (4.44pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
  \TU/lmr/m/n/10 6
  []
 
 [6]
-File: images/17.png Graphic file (type bmp)
-<images/17.png>
+File: images/18.png Graphic file (type bmp)
+<images/18.png>
 
 Overfull \hbox (4.44pt too wide) has occurred while \output is active
  [] 
@@ -473,9 +474,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [7]
-File: images/18.png Graphic file (type bmp)
-<images/18.png>
-
 Overfull \hbox (4.44pt too wide) has occurred while \output is active
  [] 
  []
@@ -485,10 +483,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  \TU/lmr/m/n/10 8
  []
 
-[8]
-File: images/18.png Graphic file (type bmp)
-<images/18.png>
-
+[8])
 Overfull \hbox (4.44pt too wide) has occurred while \output is active
  [] 
  []
@@ -499,26 +494,6 @@ Underfull \hbox (badness 10000) has occurred while \output is active
  []
 
 [9]
-Overfull \hbox (4.44pt too wide) has occurred while \output is active
- [] 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- \TU/lmr/m/n/10 10
- []
-
-[10])
-Overfull \hbox (4.44pt too wide) has occurred while \output is active
- [] 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
- \TU/lmr/m/n/10 11
- []
-
-[11]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex)
@@ -528,24 +503,24 @@ Overfull \hbox (4.44pt too wide) has occurred while \output is active
 
 
 Underfull \hbox (badness 10000) has occurred while \output is active
- \TU/lmr/m/n/10 12
+ \TU/lmr/m/n/10 10
  []
 
-[12
+[10
 
 
 
 ] (./main.aux (./theory.aux) (./experiment.aux) (./conclusion.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E53CEDFB3308A54409DDE6F764DADF51;1241.
+(rerunfilecheck)             Checksum: 1E0D0ABDF1C1A02A54C8262BBFBE7BE2;1211.
  ) 
 Here is how much of TeX's memory you used:
- 14719 strings out of 476179
- 306918 string characters out of 5809544
- 582641 words of memory out of 5000000
- 35299 multiletter control sequences out of 15000+600000
+ 14701 strings out of 476179
+ 306594 string characters out of 5809544
+ 582558 words of memory out of 5000000
+ 35283 multiletter control sequences out of 15000+600000
  469691 words of font info for 38 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 75i,13n,79p,761b,870s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,502b,816s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (13 pages, 153348 bytes).
+Output written on main.xdv (11 pages, 114500 bytes).
