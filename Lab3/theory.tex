@@ -1,14 +1,47 @@
 \section{Introduction}
 
-In the last laboratory we were learning about DC voltage measurement with an analogue and digital multimeter. We explored their parameters and calculated measurement errors and found out their sources. 
+\subsection{Theory}
 
+This laboratory's theme was DC voltage measurement. We took measurements using analog and digital meters, calculated measurement errors and investigated their sources.
 
-\subsection*{First Experiment}
+The primary source of the measurement error is the inaccuracy of a meter, but there are additional factors influencing its value. An ideal voltmeter should have an infinite internal resistance as not to let any current flow through; in reality, this device will always have a finite resistance and impact the tested circuit. Such type of an error is called a systematic/method error, and its value should be included in the measurement error.
 
-In the first experiment we connected voltmeter parallel to the circuit which consists of power source and resistor. From the lecture we know that proper way to measure voltage is to connect voltmeter with infinite internal resistance, so current does not flow through, but in real world meter is not ideal and it's changes the measured value. During this experiment we observe the influence of internal voltmeter resistance on the accuracy of measurement.
-\subsection*{Second Experiment}
+The systematic error of voltage measurements $\Delta_m V$ can be calculated using formulas shown in Eq.~\ref{eq:Delta_m},~\ref{eq:delta_m} (where: $V$ -- measured voltage, $R_c$ -- circuit resistance, $R_v$ -- internal voltmeter resistance). Then, the systematic error is used to calculate the correction factor $c$ (Eq.~\ref{eq:c}), which is later added to the measured voltage $V$ to obtain its final value $V_c$ (Eq.~\ref{eq:V_c}).
 
-In the second experiment we are using two voltmeters power supply and voltage divider. We learned how how voltage dividers work and how load on output changes output voltage. We will consider 4 different configurations: 2 with internal resistance of 1 k Ohm and two with 1 M Ohm using different k coefficients. 
+\begin{equation}
+	\Delta_m V = -V\cdot\frac{R_c}{R_v}
+	\label{eq:Delta_m}
+\end{equation}
+
+\begin{equation}
+	\delta_m V = -\frac{R_c}{R_c + R_v}
+	\label{eq:delta_m}
+\end{equation}
+
+\begin{equation}
+	c = -\Delta_m V
+	\label{eq:c}
+\end{equation}
+
+\begin{equation}
+	V_c = V + c
+	\label{eq:V_c}
+\end{equation}
+
+The final measurement result should be written as $\mathbf{V_c \pm \Delta V}$, where $\Delta V$ is the limiting error (covering the inaccuracy of a meter).
+
+\subsection{Experiment equipment}
+
+The following devices were used during the laboratory:
+\begin{itemize}
+	\item analog voltmeter: LM-3;
+	\item digital multimeter: Agilent 34401A;
+	\item decade resistor: DR4b-16;
+	\item power supply: DF1730SB3A;
+	\item voltage divider: product name unknown.
+\end{itemize}
+
+%In the second experiment we are using two voltmeters power supply and voltage divider. We learned how how voltage dividers work and how load on output changes output voltage. We will consider 4 different configurations: 2 with internal resistance of 1 k Ohm and two with 1 M Ohm using different k coefficients. 
 
 
 
