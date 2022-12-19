@@ -5,5 +5,5 @@
 \contentsline {subsection}{\numberline {2.1}Direct current measurements}{3}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Analog measurements}{3}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Digital measurements}{4}{subsubsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.2}Indirect current measurement}{4}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Conclusions}{5}{section.3}%
+\contentsline {subsection}{\numberline {2.2}Indirect current measurement}{6}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Conclusion}{9}{section.3}%
