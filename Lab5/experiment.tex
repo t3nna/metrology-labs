@@ -54,3 +54,117 @@ Example calculations for $R_r = \SI{600}{\ohm}$ ($R_2$, positive polarity) are s
 \end{equation}
 
 \subsection{Indirect resistance measurement}
+
+\subsubsection{Digital}
+For indirect measurements, we used two digital meters and resistor standard. Measurements were taken for 8 different ranges using CVM and CCM methods 
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|l|}
+    \hline
+        Rx & V & $V_r$ & Acc & $\Delta V$ & $\delta V$ \\ \hline
+        30 & 4.892 & 6 & 0.3\%+2 & 0.01668 & 0.3408830744 \\ \hline
+        100 & 4.896 & 6 & 0.3\%+2 & 0.01669 & 0.3408496732 \\ \hline
+        300 & 4.897 & 6 & 0.3\%+2 & 0.01669 & 0.3408413314 \\ \hline
+        1000 & 4.898 & 6 & 0.3\%+2 & 0.01669 & 0.3408329931 \\ \hline
+        3000 & 4.899 & 6 & 0.3\%+2 & 0.01670 & 0.3408246581 \\ \hline
+        10000 & 4.899 & 6 & 0.3\%+2 & 0.01670 & 0.3408246581 \\ \hline
+        30000 & 4.899 & 6 & 0.3\%+2 & 0.01670 & 0.3408246581 \\ \hline
+        100000 & 4.899 & 6 & 0.3\%+2 & 0.01670 & 0.3408246581 \\ \hline
+    \end{tabular}
+    \caption{Indirect resistance measurements for $E \sim \SI{4.8}{\volt}$ ($R_x$ -- true value for resistance, $V$ -- measured voltage,$V_r$ -- range,  $\Delta V$ -- absolute error, $\delta V$ -- relative error)}
+	\label{tab:analog_volt_1}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|l|}
+    \hline
+        I & Ir & Acc & $\Delta I$ & $\delta I$ & $R_m$ \\ \hline
+        136.909 & 1000 & 0.1+0.01 & 0.236909 & 0.1730412172 & 35.73176343 \\ \hline
+        42.7542 & 100 & 0.05+0.005 & 0.0527542 & 0.1233895149 & 114.5150652 \\ \hline
+        15.7777 & 100 & 0.05+0.005 & 0.0257777 & 0.1633805941 & 310.3747695 \\ \hline
+        4.42445 & 10 & 0.05+0.02 & 0.00542445 & 0.1226016793 & 1107.030252 \\ \hline
+        1.55186 & 10 & 0.05+0.02 & 0.00255186 & 0.1644388025 & 3156.856933 \\ \hline
+        0.48787 & 10 & 0.05+0.02 & 0.00148787 & 0.3049726362 & 10041.60945 \\ \hline
+        0.16289 & 10 & 0.05+0.02 & 0.00116289 & 0.7139112284 & 30075.51108 \\ \hline
+        0.04875 & 10 & 0.05+0.02 & 0.00104875 & 2.151282051 & 100492.3077 \\ \hline
+    \end{tabular}
+    \caption{($I$ -- circuit current, $Ir$ -- range, $\Delta I$ -- absolute error, $\delta I$ -- relative error, $R_m$ -- measured value)}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+        $\Delta R$ & $\delta R$ & $R_m$ +- $\Delta R$ & $R_V$ & $R_A$ \\ \hline
+        6952.729034 & 0.5139242916 & ~ & 10 & 0.0001 \\ \hline
+        24667.25518 & 0.4642391882 & ~ & 10 & 0.001 \\ \hline
+        61555.19102 & 0.5042219256 & ~ & 10 & 0.001 \\ \hline
+        238875.1465 & 0.4634346724 & ~ & 10 & 0.01 \\ \hline
+        624794.227 & 0.5052634606 & ~ & 10 & 0.01 \\ \hline
+        1554916.618 & 0.6457972942 & ~ & 10 & 0.01 \\ \hline
+        2851473.195 & 1.054735887 & ~ & 10 & 0.01 \\ \hline
+        4032423.945 & 2.492106709 & ~ & 10 & 0.01 \\ \hline
+    \end{tabular}
+    \caption{($\Delta R$ -- absolute error, $\delta R$ -- relative error, $R_V$ -- internal voltmeter resistance, $R_A$ -- internal ammeter resistance)}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+        $\Delta mR$ & $\delta mR$ & c & $R_c$ & $R_c+- \Delta R$ \\ \hline
+        0.0001 & 0.000002798638249 & -0.0001 & 35.73166343 & ~ \\ \hline
+        0.001 & 0.000008732551747 & -0.001 & 114.5140652 & ~ \\ \hline
+        0.001 & 0.000003221921755 & -0.001 & 310.3737695 & ~ \\ \hline
+        0.01 & 0.000009033258406 & -0.01 & 1107.020252 & ~ \\ \hline
+        0.01 & 0.00000316771773 & -0.01 & 3156.846933 & ~ \\ \hline
+        0.01 & 0.0000009958572889 & -0.01 & 10041.59945 & ~ \\ \hline
+        0.01 & 0.0000003324965384 & -0.01 & 30075.50108 & ~ \\ \hline
+        0.01 & 0.00000009951011401 & -0.01 & 100492.2977 & ~  \\ \hline
+    \end{tabular}
+    \caption{($\Delta mR$ -- – systematic error, $\delta mR$ -- relative error  c - correction factor  $R_c$ -- calculated resistance)}
+
+\end{table}
+
+Example calculations 
+\begin{equation}
+	 V = \frac{\alpha\cdot V_{r}}{\alpha_{max}} = \frac{39.5\cdot \SI{7.5}{\volt}}{75} = \SI{3.95}{\volt}
+	 \label{eq:analog_V}
+\end{equation}
+
+\begin{equation}
+	\Delta V = \frac{0.3}{100\unit{\percent}} \cdot V + 2 \cdot 0.001 = \frac{0.3}{100\unit{\percent}} \cdot 4.896 + 2 \cdot 0.001 = \SI{0.01669}{\volt}
+\end{equation}
+
+\begin{equation}
+	  \delta V = \frac{\Delta V}{V}\cdot 100\unit{\percent} = \frac{0.01669}{4.892}\cdot 100\unit{\percent} \approx 0.3408830744\unit{\percent}
+	  \label{eq:analog_delta_V}
+\end{equation}
+
+\begin{equation}
+	R_m = \frac{U_r}{ I_r} = \frac{\SI{4.896}{\volt}} {\SI{42.7542}{\milli\ampere}} = \SI{114.5150652}{\ohm}
+	\label{eq:analog_R_v}
+\end{equation}
+
+\begin{equation}
+	\delta_m R = \delta I + \delta V = -\SI{0.3408496732}{\percent} + \SI{0.1233895149}{\percent} = -\SI{0.4642391882}{\percent}
+	\label{eq:analog_Delta_m}
+\end{equation}
+
+\begin{equation}
+	\delta_m R = -\frac{R_A}{R_m - R_A} = -\frac{\SI{0.001}{\ohm}}{\SI{114.5150652}{\ohm} + \SI{0.001}{\ohm}} \approx 0.000008732551747
+\end{equation}
+
+\begin{equation}
+	c = -\Delta_m R = -(\SI{0.001}{\ohm}) = -\SI{0.001}{\ohm}
+	\label{eq:analog_c}
+\end{equation}
+
+\begin{equation}
+	R_c = R_m + c = \SI{114.5150652}{\ohm} + \SI{0.001}{\ohm} = \SI{114.5140652}{\ohm}
+	\label{eq:analog_V_c}
+\end{equation}
+
+
