@@ -2,7 +2,7 @@
 
 \subsection{Direct resistance measurement}
 
-For direct measurements, we used linear resistors ($R_2, R_4$) and a diode ($D$). Measurements were taken for three different ranges and both polarities. Tab.~\ref{tab:direct} shows all of the measurements along with the final results.
+We measured the resistance of linear resistors ($R_2, R_4$) and a diode ($D$). Measurements were taken for three different ranges and both polarities. Tab.~\ref{tab:direct} shows all of the measurements along with the final results.
 
 \begin{table}[H]
 	\centering
@@ -54,3 +54,195 @@ Example calculations for $R_r = \SI{600}{\ohm}$ ($R_2$, positive polarity) are s
 \end{equation}
 
 \subsection{Indirect resistance measurement}
+
+\subsubsection{Analog}
+
+The devices used for analog measurements had a 0.5 accuracy class. The voltmeter had a $\frac{\SI{1000}{\ohm}}{\unit{\volt}}$ internal resistance and the ammeter had a $\frac{23}{I_r[\unit{\milli\ampere}]} + \SI{0.004}{\ohm}$ internal resistance.
+
+The measurements for the CVM circuit are broken into Tables~\ref{tab:analog-CVM1},~\ref{tab:analog-CVM2},~\ref{tab:analog-CVM3},~\ref{tab:analog-CVM4} and the CCM circuit measurements are broken into Tables~\ref{tab:analog-CCM1},~\ref{tab:analog-CCM2},~\ref{tab:analog-CCM3},~\ref{tab:analog-CCM4}. Example calculations for the measurement of $R = \SI{100}{\ohm}$ using the CCM circuit are shown in Equations~\ref{eq:CCM1}~-~\ref{eq:CCMlast}. Since the calculations for the CVM circuit only differ in how the method error is obtained, they are not included in this report.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ c| c | c | c | c | c | c | c}
+		$R_{thr} [\unit{\ohm}]$ & $R_x [\unit{\ohm}]$& $\alpha$ & $\alpha_{max}$ & $V_r [\unit{\volt}]$ & $V_m [\unit{\volt}]$ & $\Delta V [\unit{\volt}]$ & $\delta V [\unit{\percent}]$ \\
+		\hline
+		$25$ & $30$ & $48.5$ & $75$ & $7.5$ & $4.85$ & $0.038$ & $0.773196$ \\
+		$48$ & $100$ & $48.5$ & $75$ & $7.5$ & $4.85$ & $0.038$ & $0.773196$ \\
+		$76$ & $300$ & $48.5$ & $75$ & $7.5$ & $4.85$ & $0.038$ & $0.773196$ \\
+		$152$ & $1000$ & $48.5$ & $75$ & $7.5$ & $4.85$ & $0.038$ & $0.773196$ \\
+		$240$ & $3000$ & $48.5$ & $75$ & $7.5$ & $4.85$ & $0.038$ & $0.773196$ \\
+	\end{tabular}
+	\caption{CVM for $E\sim\SI{4.8}{\volt}$ ($R_{thr}$ -- threshold resistance, $R_x$ -- true resistance, $\alpha$ -- actual needle swing, $\alpha_{max}$ -- maximal swing, $V_r$ -- range, $V_m$ -- measured voltage, $\Delta V, \delta V$ -- limiting error)}
+	\label{tab:analog-CVM1}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{  c | c | c | c | c | c}
+		$\alpha$ & $\alpha_{max}$ & $I_r [\unit{\ampere}]$ & $I_m [\unit{\ampere}]$ & $\Delta I [\unit{\ampere}]$ & $\delta I [\unit{\percent}]$ \\
+		\hline
+		$37$ & $75$ & $0.3$ & $0.148$ & $0.0015000$ & $1.013514$ \\
+		$50$ & $75$ & $0.075$ & $0.05$ & $0.0003750$ & $0.750000$ \\
+		$43.5$ & $75$ & $0.03$ & $0.0174$ & $0.0001500$ & $0.862069$ \\
+		$56$ & $75$ & $0.0075$ & $0.0056$ & $0.0000375$ & $0.669643$ \\
+		$57.5$ & $75$ & $0.003$ & $0.0023$ & $0.0000150$ & $0.652174$ \\
+	\end{tabular}
+	\caption{CVM for $E\sim\SI{4.8}{\volt}$ ($\alpha$ -- actual needle swing, $\alpha_{max}$ -- maximal swing, $I_r$ -- range, $I_m$ -- measured current, $\Delta I, \delta I$ -- limiting error)}
+	\label{tab:analog-CVM2}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{  c | c | c | c | c | c}
+		$R_m [\unit{\ohm}]$ & $\Delta R [\unit{\ohm}]$ & $\delta R [\unit{\percent}]$ & $R_m \pm \Delta R [\unit{\ohm}]$ & $R_V [\unit{\ohm}] $ & $R_A [\unit{\ohm}]$ \\
+		\hline
+		$32.770270$ & $0.585509$ & $1.786709$ & $32.8\pm0.6$ & $7500$ & $0.080667$ \\
+		$97$ & $1.477500$ & $1.523196$ & $97.0\pm1.5$ & $7500$ & $0.310667$ \\
+		$278.735632$ & $4.558066$ & $1.635265$ & $279\pm5$ & $7500$ & $0.770667$ \\
+		$866.071429$ & $12.496014$ & $1.442839$ & $866\pm13$ & $7500$ & $3.070667$ \\
+		$2108.695652$ & $30.056711$ & $1.425370$ & $2109\pm31$ & $7500$ & $7.670667$ \\
+	\end{tabular}
+	\caption{CVM for $E\sim\SI{4.8}{\volt}$ ($R_m$ -- measured resistance, $\Delta R, \delta R$ -- limiting error, $R_V$ -- internal voltmeter resistance, $R_A$ -- internal ammeter resistance)}
+	\label{tab:analog-CVM3}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{  c | c | c | c | c}
+		$\Delta_m R [\unit{\ohm}]$ & $\delta_m R [\unit{\percent}]$ & $c  [\unit{\ohm}]$ & $R_c  [\unit{\ohm}]$ & $R_c\pm \Delta R [\unit{\ohm}]$ \\
+		\hline
+		$-0.143814$ & $-0.004369$ & $0.143814$ & $32.914084$ & $33.0\pm0.6$ \\
+		$-1.270971$ & $-0.012933$ & $1.270971$ & $98.270971$ & $98.3\pm1.5$ \\
+		$-10.758996$ & $-0.037165$ & $10.758996$ & $289.494628$ & $289\pm5$ \\
+		$-113.067199$ & $-0.115476$ & $113.067199$ & $979.138627$ & $979\pm13$ \\
+		$-824.772090$ & $-0.281159$ & $824.772090$ & $2933.467742$ & $2933\pm31$ \\
+	\end{tabular}
+	\caption{CVM for $E\sim\SI{4.8}{\volt}$ ($\Delta_m R_m, \delta_m R_m $ -- method error, $c$-- correction factor, $R_c$-- corrected resistance)}
+	\label{tab:analog-CVM4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{c| c | c | c | c | c | c | c}
+		$R_{thr} [\unit{\ohm}]$& 	$R_x [\unit{\ohm}]$ &$\alpha$ & $\alpha_{max}$ & $V_r [\unit{\volt}]$ & $V_m [\unit{\volt}]$ & $\Delta V [\unit{\volt}]$ & $\delta V [\unit{\percent}]$ \\
+		\hline
+		$25$ & $30$ & $48.5$ & $75$ & $7.5$ & $4.85$ & $0.0375$ & $0.773196$ \\
+		$48$ & $100$ & $48.5$ & $75$ & $7.5$ & $4.85$ & $0.0375$ & $0.773196$ \\
+		$76$ & $300$ & $48.5$ & $75$ & $7.5$ & $4.85$ & $0.0375$ & $0.773196$ \\
+		$152$ & $1000$ & $48.5$ & $75$ & $7.5$ & $4.85$ & $0.0375$ & $0.773196$ \\
+		$240$ & $3000$ & $48.5$ & $75$ & $7.5$ & $4.85$ & $0.0375$ & $0.773196$ \\
+	\end{tabular}
+	\caption{CCM for $E\sim\SI{4.8}{\volt}$ ($R_{thr}$ -- threshold resistance, $R_x$ -- true resistance, $\alpha$ -- actual needle swing, $\alpha_{max}$ -- maximal swing, $V_r$ -- range, $V_m$ -- measured voltage, $\Delta V, \delta V$ -- limiting error)}
+	\label{tab:analog-CCM1}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{  c | c | c | c | c | c}
+		$\alpha$ & $\alpha_{max}$ & $I_r [\unit{\ampere}]$ & $I_m [\unit{\ampere}]$ & $\Delta I [\unit{\ampere}]$ & $\delta I [\unit{\percent}]$ \\
+		\hline
+		$37$ & $75$ & $0.3$ & $0.14800$ & $0.0015$ & $1.013514$ \\
+		$49$ & $75$ & $0.075$ & $0.04900$ & $0.000375$ & $0.765306$ \\
+		$37$ & $75$ & $0.03$ & $0.01480$ & $0.00015$ & $1.013514$ \\
+		$47$ & $75$ & $0.0075$ & $0.00470$ & $0.0000375$ & $0.797872$ \\
+		$41$ & $75$ & $0.003$ & $0.00164$ & $0.000015$ & $0.914634$ \\
+	\end{tabular}
+	\caption{CCM for $E\sim\SI{4.8}{\volt}$ ($\alpha$ -- actual needle swing, $\alpha_{max}$ -- maximal swing, $I_r$ -- range, $I_m$ -- measured current, $\Delta I, \delta I$ -- limiting error)}
+	\label{tab:analog-CCM2}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{  c | c | c | c | c | c}
+		$R_m [\unit{\ohm}]$ & $\Delta R [\unit{\ohm}]$ & $\delta R [\unit{\percent}]$ & $R_m \pm \Delta R [\unit{\ohm}]$ & $R_V [\unit{\ohm}] $ & $R_A [\unit{\ohm}]$ \\
+		\hline
+		$32.770270$ & $0.585509$ & $1.786709$ & $32.3\pm0.6$ & $7500$ & $0.080667$ \\
+		$98.979592$ & $1.522803$ & $1.538502$ & $99.0\pm1.6$ & $7500$ & $0.310667$ \\
+		$327.702703$ & $5.855095$ & $1.786709$ & $328\pm6$ & $7500$ & $0.770667$ \\
+		$1031.914894$ & $16.212087$ & $1.571068$ & $1032\pm17$ & $7500$ & $3.070667$ \\
+		$2957.317073$ & $49.914485$ & $1.687830$ & $2957\pm50$ & $7500$ & $7.670667$ \\
+	\end{tabular}
+	\caption{CCM for $E\sim\SI{4.8}{\volt}$ ($R_m$ -- measured resistance, $\Delta R, \delta R$ -- limiting error, $R_V$ -- internal voltmeter resistance, $R_A$ -- internal ammeter resistance)}
+	\label{tab:analog-CCM3}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{  c | c | c | c | c}
+		$\Delta_m R [\unit{\ohm}]$ & $\delta_m R [\unit{\percent}]$ & $c  [\unit{\ohm}]$ & $R_c  [\unit{\ohm}]$ & $R_c\pm \Delta R [\unit{\ohm}]$ \\
+		\hline
+		$0.080667$ & $0.002468$ & $-0.080667$ & $32.689604$ & $32.7\pm0.6$ \\
+		$0.310667$ & $0.003149$ & $-0.310667$ & $98.668925$ & $98.7\pm 1.6$ \\
+		$0.770667$ & $0.002357$ & $-0.770667$ & $326.932036$ & $327\pm 6$ \\
+		$3.070667$ & $0.002985$ & $-3.070667$ & $1028.844227$ & $1029\pm17$ \\
+		$7.670667$ & $0.002601$ & $-7.670667$ & $2949.646407$ & $2950\pm50$ \\
+	\end{tabular}
+	\caption{CCM for $E\sim\SI{4.8}{\volt}$ ($\Delta_m R_m, \delta_m R_m $ -- method error, $c$-- correction factor, $R_c$-- corrected resistance)}
+	\label{tab:analog-CCM4}
+\end{table}
+
+\begin{equation}
+	V_m = \alpha\cdot\frac{V_r}{a_{max}} = 48.5\cdot\frac{\SI{7.5}{\volt}}{75} = \SI{4.85}{\volt} 
+	\label{eq:CCM1}
+\end{equation}
+
+\begin{equation}
+	\Delta V = \frac{cl\cdot V_r}{100\unit{\percent}} = \frac{0.5\unit{\percent}\cdot\SI{7.5}{\volt}}{100\unit{\percent}} = \SI{0.0375}{\volt}
+\end{equation}
+
+\begin{equation}
+	\delta V = \frac{\Delta V}{V_m}\cdot 100\unit{\percent} = \frac{\SI{0.0375}{\volt}}{\SI{3.85}{\volt}}\cdot 100\unit{\percent}\approx 0.773196\unit{\percent}
+\end{equation}
+
+\begin{equation}
+	I_m = \alpha\cdot\frac{I_r}{a_{max}} = 49\cdot\frac{\SI{0.075}{\ampere}}{75} = \SI{0.049}{\ampere} 
+\end{equation}
+
+\begin{equation}
+	\Delta I = \frac{cl\cdot I_r}{100\unit{\percent}} = \frac{0.5\unit{\percent}\cdot\SI{0.075}{\ampere}}{100\unit{\percent}} = \SI{0.000375}{\ampere}
+\end{equation}
+
+\begin{equation}
+	\delta I  = \frac{\Delta I}{I_m}\cdot 100\unit{\percent} = \frac{\SI{0.000375}{\ampere}}{\SI{0.049}{\ampere} }\cdot 100\unit{\percent}\approx 0.765306\unit{\percent}
+\end{equation}
+
+\begin{equation}
+	R_m = \frac{V_m}{I_m} = \frac{\SI{3.85}{\volt}}{\SI{0.049}{\milli\ampere}} \approx \SI{98.979592}{\ohm} 
+\end{equation}
+
+\begin{equation}
+	\delta R = \delta V_m + \delta I_m = 0.773196\unit{\percent} + 0.765306\unit{\percent} = 1.538502\unit{\percent}
+\end{equation}
+
+\begin{equation}
+	\Delta R = R_m\cdot\frac{\delta R_m}{100\unit{\percent}}  =  \SI{197.959184}{\ohm} \cdot\frac{1.538502\unit{\percent}}{100\unit{\percent}} \approx \SI{3.045606}{\ohm}
+\end{equation}
+
+\begin{equation}
+	R_V = \frac{\SI{1000}{\ohm}}{\unit{\volt}} \cdot V_r =  \frac{\SI{1000}{\ohm}}{\unit{\volt}} \cdot \SI{7.5}{\volt} = \SI{7500}{\ohm}
+\end{equation}
+
+\begin{equation}
+	R_A = \frac{23}{I_r[\unit{\milli\ampere}]} + \SI{0.004}{\ohm} = \frac{23}{750} + \SI{0.004}{\ohm} \approx \SI{0.310667}{\ohm}
+\end{equation}
+
+\begin{equation}
+	R_{thr} = \sqrt{R_V\cdot R_A} = \sqrt{\SI{7500}{\ohm}\cdot\SI{0.310667}{\ohm}} \approx\SI{48}{\ohm}
+\end{equation}
+
+\begin{equation}
+	\Delta_m R = R_A = \SI{0.310667}{\ohm}
+\end{equation}
+
+\begin{equation}
+	\delta_m R = \frac{R_A}{R_m - R_A} = \frac{ \SI{0.310667}{\ohm}}{\SI{197.959184}{\ohm} - \SI{0.310667}{\ohm}} \approx 0.001572\unit{\percent}
+\end{equation}
+
+\begin{equation}
+	c = -\Delta_m R = - \SI{0.310667}{\ohm}
+\end{equation}
+
+\begin{equation}
+	R_c = R_m + c =  \SI{98.979592}{\ohm}   + (- \SI{0.310667}{\ohm}) = \SI{98.668925}{\ohm}
+	\label{eq:CCMlast}
+\end{equation}
