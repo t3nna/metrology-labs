@@ -6,3 +6,5 @@
 \contentsline {subsection}{\numberline {2.2}Indirect resistance measurement}{4}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Analog}{4}{subsubsection.2.2.1}%
 \contentsline {section}{\numberline {3}Conclusion}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Direct measurement}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Indirect measurement}{8}{subsection.3.2}%
