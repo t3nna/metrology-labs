@@ -1,0 +1,88 @@
+%%
+%% This is file `WUST-ECE-Metrology-Report.sty',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% WUST-ECE-Metrology-Report.dtx  (with options: `package')
+%% 
+%% This is a generated file.
+%% 
+%% To what the fuck you want with it.
+%% 
+\NeedsTeXFormat{LaTeX2e}[2005/12/01]
+\ProvidesPackage{WUST-ECE-Metrology-Report}
+  [2022/11/28 v0.1.0 WUST ECE Metrology Report package]
+\setlength{\textwidth}{140mm}
+\setlength{\hoffset}{
+  \dimexpr
+  (\paperwidth-\textwidth)/2-\oddsidemargin-1in
+}
+
+\DeclareRobustCommand*{\reportgroup}[1]{\gdef\@reportgroup{#1}}
+\DeclareRobustCommand*{\studenta}[1]{\gdef\@studenta{#1}}
+\DeclareRobustCommand*{\studentb}[1]{\gdef\@studentb{#1}}
+\DeclareRobustCommand*{\studentc}[1]{\gdef\@studentc{#1}}
+\DeclareRobustCommand*{\reportclassdate}[1]{\gdef\@reportclassdate{#1}}
+\DeclareRobustCommand*{\reportlabassistant}[1]{\gdef\@reportlabassistant{#1}}
+
+\reportgroup{}
+\studenta{}
+\studentb{}
+\studentc{}
+\reportclassdate{}
+\reportlabassistant{}
+\author{\@studenta, \@studentb, \@studentc}
+
+\renewcommand{\maketitle}{
+\begin{titlepage}
+  \thispagestyle{empty}
+  \newlength\TitleTableWidth
+  \setlength{\TitleTableWidth}{\textwidth}
+  \newpage
+  \null
+  \begin{center}
+    {\Huge{Wrocław University of Science and Technology}}
+    \vfill
+    {\Large{\uppercase{electrionic measurements\\laboratory report}}}
+    \vfill
+    {\setlength{\fboxrule}{1pt}
+    \setlength{\fboxsep}{1pt}
+    \fbox{%
+      \setlength{\fboxsep}{3pt}%
+      \fbox{%
+        \begin{tabular*}{\textwidth}
+        {p{0.6\TitleTableWidth} p{0.4\TitleTableWidth}}
+        Chair of Electronic and Photonic Metrology\\
+        \uppercase{electrionic measurements laboratory}\\\\
+        Theme of class: \@title \\\\
+        Group no: \@reportgroup\\\\
+        Students: & Date of class: \@reportclassdate\\
+        1. \@studenta\\
+        2. \@studentb\\
+        3. \@studentc & Submission Date: \@date\\\\
+        Lab assistant: \@reportlabassistant\\
+        \end{tabular*}%
+      }%
+    }}
+  \end{center}
+\end{titlepage}
+}
+\def\ps@metrology{
+  \renewcommand{\@evenhead}{
+    \vbox{
+      \hbox{Metrology\hfill}
+      \vspace{1pt}
+      \hbox{\rule{\textwidth}{0.5pt}\hfill}
+    }
+  }
+  \renewcommand{\@oddhead}{\@evenhead}
+  \renewcommand{\@evenfoot}{
+    \thepage
+  }
+  \renewcommand{\@oddfoot}{\@evenfoot}
+}
+\pagestyle{metrology}
+\endinput
+%%
+%% End of file `WUST-ECE-Metrology-Report.sty'.
