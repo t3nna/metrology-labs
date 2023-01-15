@@ -3,5 +3,5 @@
 \contentsline {subsection}{\numberline {1.2}Equipment}{2}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Experiment}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Measurement of voltage source parameters}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Measurement of current source parameters}{3}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Conclusion}{4}{section.3}%
+\contentsline {subsection}{\numberline {2.2}Measurement of current source parameters}{6}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Conclusion}{8}{section.3}%
